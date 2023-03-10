@@ -1,2 +1,2 @@
 My hyprland (kitty + waybar + fuzzel + nemo + swww)
-![20230307_08h31m03s_grim](https://user-images.githubusercontent.com/120003645/223289962-a0dfb335-7424-4f09-bdc4-56b2cb5e01a1.png)
+![20230310_19h42m13s_grim](https://user-images.githubusercontent.com/120003645/224307459-6d575c87-6cb5-44fb-b965-d7f6df3d09c1.png)
