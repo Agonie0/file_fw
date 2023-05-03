@@ -1,0 +1,268 @@
+* {
+	border: none;
+	border-radius: 10;
+    font-family: FiraCode Nerd Font ;
+	font-size: 15px;
+	min-height: 10px;
+}
+
+window#waybar {
+	background: transparent;
+}
+
+window#waybar.hidden {
+	opacity: 0.2;
+}
+#workspaces button {
+	background: #252733;
+	padding: 0 5px;
+	color: #c2caea;
+	margin-top: 6px;
+	margin-left: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+}
+#workspaces button.focused {
+	color: #ebaaaa;
+}
+#workspaces button:hover {
+	box-shadow: inherit;
+	text-shadow: inherit;
+}
+#workspaces button:hover {
+	background: #fdbdbd;
+	border: #e69e9e;
+	padding: 0 5px;
+}
+#window {
+	margin-top: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 10px;
+	transition: none;
+    color: #252733;
+	background: #252733;
+}
+#tags {
+	margin-top: 6px;
+	margin-left: 12px;
+	font-size: 4px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	background: #161320;
+	transition: none;
+}
+
+#tags button {
+	transition: none;
+	color: #B5E8E0;
+	background: #B5E8E0;
+	font-size: 16px;
+	border-radius: 2px;
+}
+
+#tags button.occupied {
+	transition: none;
+	color: #F28FAD;
+	background: transparent;
+	font-size: 4px;
+}
+
+#tags button.focused {
+	color: #ABE9B3;
+    border-top: 2px solid #ABE9B3;
+    border-bottom: 2px solid #ABE9B3;
+}
+
+#tags button:hover {
+	transition: none;
+	box-shadow: inherit;
+	text-shadow: inherit;
+	color: #FAE3B0;
+    border-color: #E8A2AF;
+    color: #E8A2AF;
+}
+
+#tags button.focused:hover {
+    color: #E8A2AF;
+}
+
+#network {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	transition: none;
+	color: #cd79c1;
+	background: #252733;
+}
+#temperature {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	margin-bottom: 0px;
+	padding-right: 10px;
+	border-radius: 10px;
+	transition: none;
+	color: #7dda9f;
+	background-color: #252733;
+}
+#pulseaudio {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	transition: none;
+	color: #ac92c6;
+	background: #2d2d3a;
+}
+
+#battery.charging, #battery.plugged {
+	color: #161320;
+    background-color: #B5E8E0;
+}
+
+#battery.critical:not(.charging) {
+    background-color: #B5E8E0;
+    color: #161320;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        background-color: #BF616A;
+        color: #B5E8E0;
+    }
+}
+
+#backlight {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	transition: none;
+	color: #161320;
+	background: #F8BD96;
+}
+#tray {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	transition: none;
+	color: #aea4d0;
+	background: #45495c;
+	/*background: #1A1826;*/
+}
+
+#memory {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	margin-bottom: 0px;
+	padding-right: 10px;
+	border-radius: 10px;
+	transition: none;
+	color: #7dda9f;
+	background-color: #252733;
+}
+#cpu {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	margin-bottom: 0px;
+	padding-right: 10px;
+	border-radius: 10px;
+	transition: none;
+	color: #f48f8f;
+	background-color: #252733;
+}
+
+#disk {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	margin-bottom: 0px;
+	padding-right: 10px;
+	border-radius: 10px;
+	transition: none;
+	color: rgb(228, 189, 134);
+	background: #2a3139;
+}
+
+#clock {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	margin-bottom: 0px;
+	padding-right: 10px;
+	border-radius: 10px;
+	transition: none;
+	color: #e68da5;
+	background: #292c3a;
+}
+
+#custom-launcher {
+	font-size: 24px;
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 5px;
+	border-radius: 10px;
+	transition: none;
+    color: #e17f69;
+    background: #312e2e;
+}
+
+#custom-power {
+	font-size: 20px;
+	margin-top: 6px;
+	margin-left: 8px;
+	margin-right: 8px;
+	padding-left: 10px;
+	padding-right: 5px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	transition: none;
+	color: #161320;
+	background: #F28FAD;
+}
+
+#custom-wallpaper {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	transition: none;
+	color: #161320;
+	background: #C9CBFF;
+}
+
+
+#custom-media {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	transition: none;
+	color: #161320;
+	background: #F2CDCD;
+}
